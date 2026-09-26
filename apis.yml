@@ -1,23 +1,72 @@
 aid: audienceco
+
 name: Audienceco
-description: 'Audienceco is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Audienceco provides performance marketing and audience engagement services, helping advertisers acquire and retain customers through data-driven advertising programs. They operate a push exchange platform, PushEX, and manage audience data across multiple geographies, reaching nearly 3 million daily users. Their solutions focus on intelligent audience acquisition, leveraging first‑party and third‑party data to deliver measurable results for brands.'
+
 url: https://raw.githubusercontent.com/api-evangelist/audienceco/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Performance Marketing
+- Audience Acquisition
+- Push Exchange
+- Lead Generation
+- Subscription Marketing
+- Publisher Monetisation
+- Fraud Prevention
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/audienceco-hosts.yml
+- type: Support
+  url: https://support.audienceco.com/
+- type: DomainSecurity
+  url: security/audienceco-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/audienceco
+  url: https://audienceco.com
+- type: Documentation
+  url: https://audienceco.com/developers
+- type: GettingStarted
+  url: https://audienceco.com/getting-started
+- type: Pricing
+  url: https://audienceco.com/pricing
+- type: TermsOfService
+  url: https://audienceco.com/termsandconditions.html
+- type: PrivacyPolicy
+  url: https://audienceco.com/privacypolicy.html
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages return HTML shells and no machine‑readable OpenAPI spec is available.
+  evidence:
+    - url: https://audienceco.com/openapi.json
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
