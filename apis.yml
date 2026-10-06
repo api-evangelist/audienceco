@@ -17,7 +17,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-26'
 
-modified: '2026-09-26'
+modified: '2026-10-06'
 
 tags:
 - Performance Marketing
@@ -35,6 +35,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://audienceco.com/blog/
+  type: Blog
 - type: Hosts
   url: hosts/audienceco-hosts.yml
 - type: Support
